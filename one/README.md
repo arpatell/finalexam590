@@ -21,7 +21,7 @@ In this Elixir solution, the implementation of the 4 pillars of OOP is attempted
 
 4. **Polymorphism**
 
-   The call to ``:speak` for both animals happens in the same structure, but the actual output depends on what type of animal it is. This is because the injected function in Dog and Cat each define a module specific implementation for the speak function. This indicates polymorphic behavior, similar to how Java has subclass specifc implementations. 
+   The call to `:speak` for both animals happens in the same structure, but the actual output depends on what type of animal it is. This is because the injected function in Dog and Cat each define a module specific implementation for the speak function. This indicates polymorphic behavior, similar to how Java has subclass specifc implementations. 
    - Java mapping: This is equivalent to calling `a1.speak()` in Java, but instead we do `send(a1, {:speak, self()})`, which returns the respective message based on what type of animal `a1` is.
 
 ## Running the Program
